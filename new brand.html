@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Great Indian Street Festival</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --brand-900: #3c1126; /* deep backdrop */
+        --brand-800: #55203a;
+        --brand-700: #712546; /* primary maroon */
+        --brand-500: #cc7450; /* secondary coral */
+        --brand-400: #d3bbc8; /* soft tint for lines/surfaces */
+        --brand-300: #eabb5e; /* accent yellow */
+        --brand-50: #fefdfd; /* paper white */
+      }
+      html,
+      body {
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI,
+          Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      :focus-visible {
+        outline: 2px solid #67e8f9;
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body
+    class="min-h-screen w-full bg-[color:oklch(14%_0.03_350)] text-[var(--brand-50)] pb-20 md:pb-0 overflow-x-hidden"
+  >
+    <!-- Header (hidden on small, visible from md+) -->
+    <header
+      id="header"
+      class="hidden md:block md:fixed md:z-50 md:top-0 md:inset-x-0 md:transition md:bg-transparent"
+    >
+      <nav
+        class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
+      >
+        <a href="#top" class="font-semibold flex items-center gap-2">
+          <img
+            src="logo.png"
+            alt="The Great Indian Street Festival logo"
+            class="h-24 width-auto"
+          />
+        </a>
+        <div
+          class="hidden md:flex items-center gap-6 text-sm text-[var(--brand-50)]/80"
+        >
+          <a href="#activities" class="hover:text-[var(--brand-50)]"
+            >Activities</a
+          >
+          <a href="#route" class="hover:text-[var(--brand-50)]">Route</a>
+          <a href="#schedule" class="hover:text-[var(--brand-50)]">Schedule</a>
+          <a href="#safety" class="hover:text-[var(--brand-50)]">Safety</a>
+          <a href="#wall" class="hover:text-[var(--brand-50)]"
+            >Wall of Change</a
+          >
+          <a href="#faq" class="hover:text-[var(--brand-50)]">FAQ</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <a
+            href="#registration"
+            class="px-4 py-2 rounded-xl bg-[var(--brand-300)] text-neutral-900 font-semibold hover:opacity-90"
+          >
+            Register
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Small-screen sticky bottom Register button -->
+    <div
+      class="md:hidden fixed bottom-0 inset-x-0 z-50 bg-[var(--brand-50)]/95 backdrop-blur border-t border-[var(--brand-400)]/30"
+    >
+      <a
+        href="#registration"
+        class="w-full py-4 text-base font-semibold bg-[var(--brand-300)] text-neutral-900 block text-center"
+      >
+        Register Now
+      </a>
+    </div>
+
+    <!-- Hero -->
+    <section
+      id="top"
+      class="relative min-h-[92vh] w-screen overflow-hidden grid place-items-center md:pt-16"
+    >
+      <video
+        class="absolute inset-0 w-full h-full min-w-full min-h-full object-cover opacity-20"
+        autoplay
+        loop
+        muted
+        playsinline
+      ></video>
+
+      <div class="absolute inset-0 -z-10">
+        <!-- top glow -->
+        <div
+          class="absolute -top-32 -left-24 w-[48rem] h-[48rem] rounded-full blur-3xl bg-gradient-to-br from-[color:oklch(35%_0.07_350)] to-[var(--brand-700)] opacity-0"
+          style="animation: fadeIn 1s forwards"
+        ></div>
+        <!-- bottom glow -->
+        <div
+          class="absolute -bottom-24 -right-24 w-[48rem] h-[48rem] rounded-full blur-3xl bg-gradient-to-br from-[var(--brand-500)] to-[var(--brand-300)] opacity-0"
+          style="animation: fadeIn 1.2s forwards"
+        ></div>
+      </div>
+
+      <div class="relative z-10 w-full">
+        <div
+          class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center"
+        >
+          <div>
+            <div class="md:hidden mb-4 mt-4">
+              <img
+                src="logo.png"
+                alt="The Great Indian Street Festival logo"
+                class="h-36 w-auto mx-auto"
+              />
+            </div>
+            <p
+              class="inline-flex items-center gap-2 text-xs tracking-wider uppercase text-[var(--brand-50)]/80"
+            >
+              <span
+                class="w-1.5 h-1.5 rounded-full bg-[var(--brand-300)]"
+              ></span>
+              Official City Road Closure Festival
+            </p>
+            <h1 class="mt-3 text-4xl md:text-6xl font-extrabold leading-tight">
+              The Great Indian
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--brand-300)] to-[var(--brand-500)]"
+                >Street Festival</span
+              >
+            </h1>
+            <p class="mt-4 text-[var(--brand-50)]/80 text-lg">
+              Get ready for a high-energy celebration of fitness, fun, and
+              community spirit! The streets will come alive with wellness,
+              games,
+              <span class="font-semibold text-[var(--brand-50)]"
+                >and cultural performances for all to enjoy.</span
+              >.
+            </p>
+
+            <div class="mt-6 flex items-center gap-4">
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 8v5l3 3"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+              <div
+                id="countdown"
+                class="flex gap-2 text-center"
+                aria-live="polite"
+              ></div>
+            </div>
+
+            <div class="mt-6 flex flex-col sm:flex-row gap-3">
+              <a
+                href="#registration"
+                class="px-5 py-3 rounded-2xl bg-[var(--brand-300)] text-neutral-900 font-semibold hover:opacity-90"
+              >
+                Register Now
+              </a>
+              <a
+                href="#activities"
+                class="px-5 py-3 rounded-2xl border border-[var(--brand-300)]/40 text-white hover:border-[var(--brand-300)] hover:text-[var(--brand-300)]/90 text-center"
+                >Explore Activities</a
+              >
+            </div>
+
+            <ul
+              class="mt-8 grid grid-cols-2 sm:grid-cols-5 gap-4 text-sm text-[var(--brand-50)]/80"
+            >
+              <li class="flex items-center gap-2">📅 12 Oct 2025</li>
+              <li class="flex items-center gap-2">📍 Ashiana Town, Bhiwadi</li>
+              <li class="flex items-center gap-2">🎶 Music & Cultural Shows</li>
+              <li class="flex items-center gap-2">🛡️ Safe & Barricaded</li>
+              <li class="flex items-center gap-2">🏆 Prizes & Goodies</li>
+            </ul>
+          </div>
+
+          <div class="relative">
+            <div
+              class="rounded-3xl border border-[var(--brand-400)]/25 bg-white/[0.03] p-5 backdrop-blur"
+            >
+              <div class="grid grid-cols-3 gap-3">
+                <div
+                  class="rounded-2xl bg-white/[0.04] border border-[var(--brand-400)]/25 p-4"
+                >
+                  <div class="w-6 h-6">⛸️</div>
+                  <p class="mt-2 text-sm text-[var(--brand-50)]/80">
+                    Skating Slalom
+                  </p>
+                </div>
+                <div
+                  class="rounded-2xl bg-white/[0.04] border border-[var(--brand-400)]/25 p-4"
+                >
+                  <div class="w-6 h-6">🧘</div>
+                  <p class="mt-2 text-sm text-[var(--brand-50)]/80">
+                    Yoga & Zumba
+                  </p>
+                </div>
+                <div
+                  class="rounded-2xl bg-white/[0.04] border border-[var(--brand-400)]/25 p-4"
+                >
+                  <div class="w-6 h-6">🍢</div>
+                  <p class="mt-2 text-sm text-[var(--brand-50)]/80">
+                    Food Carnival
+                  </p>
+                </div>
+              </div>
+              <div
+                class="mt-4 rounded-xl bg-gradient-to-r from-[var(--brand-300)]/20 to-[var(--brand-500)]/20 p-4 border border-[var(--brand-400)]/25"
+              >
+                <p class="text-sm text-[var(--brand-50)]/80">
+                  Tip: Evening stage shows & fireworks don’t miss the closing
+                  ceremony!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section
+      id="activities"
+      class="py-20 bg-gradient-to-b from-[color:oklch(14%_0.03_350)] to-[color:oklch(18%_0.03_350)]"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto">
+          <p
+            class="text-xs uppercase tracking-widest text-[var(--brand-50)]/70"
+          >
+            Festival Highlights
+          </p>
+          <h3 class="mt-2 text-3xl md:text-4xl font-bold">
+            Excitement Awaits at Every Corner
+          </h3>
+          <p class="mt-2 text-[var(--brand-50)]/80">
+            From fitness and fun-filled challenges to cultural performances and
+            community pledges, the Ashiana Town Festival is packed with
+            activities that bring joy, energy, and togetherness for all ages.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-6 mt-8">
+          <div class="lg:col-span-4 space-y-3" id="activity-list"></div>
+          <div class="lg:col-span-8" id="activity-panel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Route -->
+    <section id="route" class="py-20 bg-[color:oklch(18%_0.03_350)]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto">
+          <p
+            class="text-xs uppercase tracking-widest text-[var(--brand-50)]/70"
+          >
+            Navigate with ease
+          </p>
+          <h3 class="mt-2 text-3xl md:text-4xl font-bold">
+            Celebrate Togetherness, Joy, and Wellness at Ashiana Town Festival
+          </h3>
+          <p class="mt-2 text-[var(--brand-50)]/80">
+            Join us for a vibrant celebration filled with fitness, fun, and
+            unforgettable moments as the Ashiana community comes together in one
+            grand festival.
+          </p>
+        </div>
+        <div class="mt-8" id="route-connected"></div>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section
+      id="schedule"
+      class="py-20 bg-gradient-to-b from-[color:oklch(18%_0.03_350)] to-[color:oklch(14%_0.03_350)]"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto">
+          <p
+            class="text-xs uppercase tracking-widest text-[var(--brand-50)]/70"
+          >
+            Plan your day
+          </p>
+          <h3 class="mt-2 text-3xl md:text-4xl font-bold">Event Schedule</h3>
+          <p class="mt-2 text-[var(--brand-50)]/80">
+            Arrive early for warm-ups. All times are local.
+          </p>
+        </div>
+        <div id="timeline" class="mt-8"></div>
+      </div>
+    </section>
+
+    <!-- Wall of Change -->
+    <section id="wall" class="py-20 bg-[color:oklch(14%_0.03_350)]">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <p class="text-xs uppercase tracking-widest text-[var(--brand-50)]/70">
+          Be the change
+        </p>
+        <h3 class="mt-2 text-3xl md:text-4xl font-bold">The Wall of Change</h3>
+        <p class="mt-2 text-[var(--brand-50)]/80">
+          Write your pledge from fitness goals to eco promises. Selected pledges
+          will be read out on stage.
+        </p>
+        <div class="mt-6 grid sm:grid-cols-2 gap-3 text-left">
+          <input
+            id="pledgeName"
+            class="rounded-xl bg-white/10 border border-[var(--brand-400)]/25 p-3"
+            placeholder="Your name"
+          />
+          <input
+            id="pledgeText"
+            class="rounded-xl bg-white/10 border border-[var(--brand-400)]/25 p-3"
+            placeholder="I pledge to…"
+          />
+        </div>
+        <button
+          id="addPledge"
+          class="mt-4 px-6 py-3 rounded-2xl bg-[var(--brand-300)] text-neutral-900 font-semibold hover:opacity-90"
+        >
+          Add Your Pledge
+        </button>
+        <div
+          id="pledgeBoard"
+          class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Accessibility & Family Info -->
+    <section id="info" class="relative py-20">
+      <div class="pointer-events-none absolute inset-0 -z-10">
+        <div
+          class="absolute left-1/2 top-0 -translate-x-1/2 w-[52rem] h-[52rem] rounded-full blur-3xl opacity-20 bg-gradient-to-br from-[var(--brand-500)]/20 to-[var(--brand-300)]/20"
+        ></div>
+      </div>
+
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto">
+          <p
+            class="text-xs uppercase tracking-widest text-[var(--brand-50)]/70"
+          >
+            comfort for every guest
+          </p>
+          <h3 class="mt-2 text-3xl md:text-4xl font-bold">
+            Accessibility & Family Essentials
+          </h3>
+          <p class="mt-2 text-[var(--brand-50)]/80">
+            All zones are designed with safety and comfort in mind. Here’s what
+            to expect on-ground.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <!-- Card 1 -->
+          <article
+            class="group relative rounded-2xl border border-[var(--brand-400)]/25 bg-white/[0.06] backdrop-blur p-5 hover:border-[var(--brand-400)]/35 transition"
+          >
+            <div
+              class="absolute -top-3 left-5 px-3 py-1 rounded-full text-[11px] tracking-wide bg-[var(--brand-300)]/18 text-[var(--brand-50)] border border-[var(--brand-300)]/35"
+            >
+              Accessibility
+            </div>
+
+            <header class="mt-2 flex items-center gap-3">
+              <div
+                class="grid place-items-center w-11 h-11 rounded-xl bg-[var(--brand-300)]/15 border border-[var(--brand-300)]/30 text-xl text-[var(--brand-300)]"
+              >
+                ♿
+              </div>
+              <h4 class="text-lg font-semibold">Everyone can join in</h4>
+            </header>
+
+            <ul class="mt-4 space-y-2 text-sm text-[var(--brand-50)]/85">
+              <li class="flex gap-2">
+                <span
+                  class="mt-1 w-4 h-4 grid place-items-center rounded-full bg-[var(--brand-300)]/20 text-[10px] border border-[var(--brand-300)]/40"
+                  >✓</span
+                >
+                Ramps & wheelchair aisle across key crossings
+              </li>
+              <li class="flex gap-2">
+                <span
+                  class="mt-1 w-4 h-4 grid place-items-center rounded-full bg-[var(--brand-300)]/20 text-[10px] border border-[var(--brand-300)]/40"
+                  >✓</span
+                >
+                Senior seating close to the main stage
+              </li>
+              <li class="flex gap-2">
+                <span
+                  class="mt-1 w-4 h-4 grid place-items-center rounded-full bg-[var(--brand-300)]/20 text-[10px] border border-[var(--brand-300)]/40"
+                  >✓</span
+                >
+                Baby-care & feeding room near Family Lounge
+              </li>
+            </ul>
+
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span
+                class="px-2.5 py-1 rounded-full text-xs bg-white/10 border border-[var(--brand-400)]/25"
+                >Priority entry gates</span
+              >
+              <span
+                class="px-2.5 py-1 rounded-full text-xs bg-white/10 border border-[var(--brand-400)]/25"
+                >Assistance desk</span
+              >
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article
+            class="group relative rounded-2xl border border-[var(--brand-400)]/25 bg-white/[0.06] backdrop-blur p-5 hover:border-[var(--brand-400)]/35 transition"
+          >
+            <div
+              class="absolute -top-3 left-5 px-3 py-1 rounded-full text-[11px] tracking-wide bg-[var(--brand-500)]/18 text-[var(--brand-50)] border border-[var(--brand-500)]/35"
+            >
+              Family Comfort
+            </div>
+
+            <header class="mt-2 flex items-center gap-3">
+              <div
+                class="grid place-items-center w-11 h-11 rounded-xl bg-[var(--brand-300)]/15 border border-[var(--brand-300)]/30 text-xl text-[var(--brand-300)]"
+              >
+                👨‍👩‍👧‍👦
+              </div>
+              <h4 class="text-lg font-semibold">Stay cool & comfy</h4>
+            </header>
+
+            <ul class="mt-4 space-y-2 text-sm text-[var(--brand-50)]/85">
+              <li class="flex gap-2">
+                <span
+                  class="mt-1 w-4 h-4 grid place-items-center rounded-full bg-[var(--brand-500)]/20 text-[10px] border border-[var(--brand-500)]/40"
+                  >✓</span
+                >
+                Shaded lounges & misting fans along the route
+              </li>
+              <li class="flex gap-2">
+                <span
+                  class="mt-1 w-4 h-4 grid place-items-center rounded-full bg-[var(--brand-500)]/20 text-[10px] border border-[var(--brand-500)]/40"
+                  >✓</span
+                >
+                Portable restrooms (2 clusters, cleaned regularly)
+              </li>
+              <li class="flex gap-2">
+                <span
+                  class="mt-1 w-4 h-4 grid place-items-center rounded-full bg-[var(--brand-500)]/20 text-[10px] border border-[var(--brand-500)]/40"
+                  >✓</span
+                >
+                Charging points & water-refill counters
+              </li>
+            </ul>
+
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span
+                class="px-2.5 py-1 rounded-full text-xs bg-white/10 border border-[var(--brand-400)]/25"
+                >Pram-friendly lanes</span
+              >
+              <span
+                class="px-2.5 py-1 rounded-full text-xs bg-white/10 border border-[var(--brand-400)]/25"
+                >Lost & found</span
+              >
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article
+            class="group relative rounded-2xl border border-[var(--brand-400)]/25 bg-white/[0.06] backdrop-blur p-5 hover:border-[var(--brand-400)]/35 transition"
+          >
+            <div
+              class="absolute -top-3 left-5 px-3 py-1 rounded-full text-[11px] tracking-wide bg-[var(--brand-700)]/25 text-[var(--brand-50)] border border-[var(--brand-700)]/40"
+            >
+              Social & Photos
+            </div>
+
+            <header class="mt-2 flex items-center gap-3">
+              <div
+                class="grid place-items-center w-11 h-11 rounded-xl bg-[var(--brand-300)]/15 border border-[var(--brand-300)]/30 text-xl text-[var(--brand-300)]"
+              >
+                📸
+              </div>
+              <h4 class="text-lg font-semibold">Capture the street vibes</h4>
+            </header>
+
+            <ul class="mt-4 space-y-2 text-sm text-[var(--brand-50)]/85">
+              <li class="flex gap-2">
+                <span
+                  class="mt-1 w-4 h-4 grid place-items-center rounded-full bg-[var(--brand-700)]/20 text-[10px] border border-[var(--brand-700)]/40"
+                  >✓</span
+                >
+                Photo booths & backdrop walls at three checkpoints
+              </li>
+              <li class="flex gap-2">
+                <span
+                  class="mt-1 w-4 h-4 grid place-items-center rounded-full bg-[var(--brand-700)]/20 text-[10px] border border-[var(--brand-700)]/40"
+                  >✓</span
+                >
+                Hashtag:
+                <span class="ml-1 font-medium"
+                  >#TheGreatIndianStreetFestival</span
+                >
+              </li>
+              <li class="flex gap-2">
+                <span
+                  class="mt-1 w-4 h-4 grid place-items-center rounded-full bg-[var(--brand-700)]/20 text-[10px] border border-[var(--brand-700)]/40"
+                  >✓</span
+                >
+                Surprise rewards for the best reels & posts
+              </li>
+            </ul>
+
+            <div class="mt-5 flex flex-wrap gap-2">
+              <a
+                href="https://www.instagram.com/explore/tags/TheGreatIndianStreetFestival/"
+                target="_blank"
+                rel="noopener"
+                class="px-3 py-1 rounded-full text-xs bg-white/10 border border-[var(--brand-400)]/25 hover:bg-white/15 transition"
+              >
+                Share on Instagram
+              </a>
+              <span
+                class="px-2.5 py-1 rounded-full text-xs bg-white/10 border border-[var(--brand-400)]/25"
+                >Live screen shout-outs</span
+              >
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-8 text-center text-xs text-[var(--brand-50)]/60">
+          Need assistance on-site? Visit any
+          <span
+            class="px-2 py-0.5 rounded-full bg-white/10 border border-[var(--brand-400)]/25"
+            >Help Desk</span
+          >.
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section id="sponsors" class="py-16 bg-[color:oklch(14%_0.03_350)]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto">
+          <p
+            class="text-xs uppercase tracking-widest text-[var(--brand-50)]/70"
+          >
+            A Sneak Peak into Ashiana Lifestyle
+          </p>
+          <h3 class="mt-2 text-3xl md:text-4xl font-bold">
+            Everyday Moments, Extraordinary Joy
+          </h3>
+          <p class="mt-3 text-sm md:text-base text-[var(--brand-50)]/80">
+            A glimpse into the laughter, friendships, and celebrations that make
+            life at Ashiana truly special.
+          </p>
+        </div>
+        <div
+          id="sponsor-strip"
+          class="mt-8 overflow-x-auto whitespace-nowrap scrollbar-hide"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Safety -->
+    <section id="safety" class="py-20 bg-[color:oklch(18%_0.03_350)]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto">
+          <p
+            class="text-xs uppercase tracking-widest text-[var(--brand-50)]/70"
+          >
+            Safety & Support
+          </p>
+          <h3 class="mt-2 text-3xl md:text-4xl font-bold">
+            Your Safety, Our Priority
+          </h3>
+          <p class="mt-3 text-sm md:text-base text-[var(--brand-50)]/80">
+            Enjoy the festival worry-free! With dedicated teams, medical
+            support, and well-planned arrangements, we’re here to ensure a safe,
+            smooth, and enjoyable experience for everyone.
+          </p>
+        </div>
+        <div id="safety-cards" class="mt-8 grid md:grid-cols-3 gap-6"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-[color:oklch(14%_0.03_350)]">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto">
+          <p
+            class="text-xs uppercase tracking-widest text-[var(--brand-50)]/70"
+          >
+            Know before you go
+          </p>
+          <h3 class="mt-2 text-3xl md:text-4xl font-bold">FAQs</h3>
+        </div>
+        <div
+          id="faq-list"
+          class="mt-6 divide-y divide-[var(--brand-400)]/20 rounded-2xl border border-[var(--brand-400)]/25"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section id="registration" class="bg-[color:oklch(18%_0.03_350)]">
+      <div class="max-w-4xl mx-auto px-6 py-12">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl md:text-4xl font-bold text-[var(--brand-50)]">
+            Register for the Festival
+          </h2>
+          <p class="mt-4 text-[var(--brand-50)]/80 text-lg">
+            Join us for an unforgettable street festival experience
+          </p>
+        </div>
+        <form
+          id="reg-form"
+          class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4"
+        >
+          <div>
+            <label class="text-sm text-[var(--brand-50)]/80" for="f-name"
+              >Full Name <span class="text-red-400">*</span></label
+            >
+            <input
+              id="f-name"
+              class="mt-1 w-full rounded-xl bg-white/10 border border-[var(--brand-400)]/25 p-3 outline-none focus:border-[var(--brand-400)]/45"
+            />
+            <p id="e-name" class="hidden text-xs text-rose-300 mt-1"></p>
+          </div>
+          <div>
+            <label class="text-sm text-[var(--brand-50)]/80" for="f-phone"
+              >Phone No <span class="text-red-400">*</span></label
+            >
+            <input
+              id="f-phone"
+              inputmode="tel"
+              class="mt-1 w-full rounded-xl bg-white/10 border border-[var(--brand-400)]/25 p-3 outline-none focus:border-[var(--brand-400)]/45"
+            />
+            <p id="e-phone" class="hidden text-xs text-rose-300 mt-1"></p>
+          </div>
+          <div>
+            <label class="text-sm text-[var(--brand-50)]/80" for="f-email"
+              >Email Address <span class="text-red-400">*</span></label
+            >
+            <input
+              id="f-email"
+              inputmode="email"
+              class="mt-1 w-full rounded-xl bg-white/10 border border-[var(--brand-400)]/25 p-3 outline-none focus:border-[var(--brand-400)]/45"
+            />
+            <p id="e-email" class="hidden text-xs text-rose-300 mt-1"></p>
+          </div>
+          <div>
+            <label class="text-sm text-[var(--brand-50)]/80" for="f-resident"
+              >Ashiana Resident</label
+            >
+            <select
+              id="f-resident"
+              class="mt-1 w-full rounded-xl bg-white/10 border border-[var(--brand-400)]/25 p-3 outline-none focus:border-[var(--brand-400)]/45"
+            >
+              <option value="">Select an option</option>
+              <option value="yes">YES</option>
+              <option value="no">NO</option>
+            </select>
+            <p id="e-resident" class="hidden text-xs text-rose-300 mt-1"></p>
+          </div>
+          <div id="resident-yes" class="hidden">
+            <label class="text-sm text-[var(--brand-50)]/80" for="f-ashiana"
+              >5. Select the Project</label
+            >
+            <select
+              id="f-ashiana"
+              class="mt-1 w-full rounded-xl bg-white/10 border border-[var(--brand-400)]/25 p-3 outline-none focus:border-[var(--brand-400)]/45"
+            >
+              <option value="">Select project</option>
+              <option value="Ashiana Nirmay">Ashiana Nirmay</option>
+              <option value="Ashiana Advik">Ashiana Advik</option>
+              <option value="Ashiana Shubham">Ashiana Shubham</option>
+              <option value="Ashiana Vatsalya">Ashiana Vatsalya</option>
+              <option value="Ashiana Swarang">Ashiana Swarang</option>
+              <option value="Ashiana Utsav">Ashiana Utsav</option>
+              <option value="Ashiana Amodh">Ashiana Amodh</option>
+              <option value="Ashiana Town">Ashiana Town</option>
+              <option value="Amarah By Ashiana">Amarah By Ashiana</option>
+              <option value="Ashiana Umang">Ashiana Umang</option>
+              <option value="Ashiana Anmol">Ashiana Anmol</option>
+              <option value="Ashiana Tarang">Ashiana Tarang</option>
+              <option value="Ashiana Amantran">Ashiana Amantran</option>
+              <option value="Ashiana Ekansh">Ashiana Ekansh</option>
+              <option value="Ashiana Nitara">Ashiana Nitara</option>
+              <option value="Ashiana Aravali">Ashiana Aravali</option>
+              <option value="Ashiana Sehar">Ashiana Sehar</option>
+              <option value="Ashiana Prakriti">Ashiana Prakriti</option>
+              <option value="Ashiana Dwarka">Ashiana Dwarka</option>
+              <option value="Ashiana Malhar">Ashiana Malhar</option>
+              <option value="ONE44">ONE44</option>
+            </select>
+            <p id="e-ashiana" class="hidden text-xs text-rose-300 mt-1"></p>
+          </div>
+          <div id="resident-no" class="hidden">
+            <label class="text-sm text-[var(--brand-50)]/80" for="f-address"
+              >Address</label
+            >
+            <input
+              id="f-address"
+              class="mt-1 w-full rounded-xl bg-white/10 border border-[var(--brand-400)]/25 p-3 outline-none focus:border-[var(--brand-400)]/45"
+              placeholder="House/Street, City"
+            />
+            <p id="e-address" class="hidden text-xs text-rose-300 mt-1"></p>
+          </div>
+          <div class="md:col-span-2">
+            <label class="text-sm text-[var(--brand-50)]/80" for="f-remarks"
+              >Any Query (Optional)</label
+            >
+            <textarea
+              id="f-query"
+              rows="3"
+              class="mt-1 w-full rounded-xl bg-white/10 border border-[var(--brand-400)]/25 p-3 outline-none focus:border-[var(--brand-400)]/45 resize-none"
+              placeholder="Any additional comments or special requirements..."
+            ></textarea>
+            <p id="e-query" class="hidden text-xs text-rose-300 mt-1"></p>
+          </div>
+
+          <div class="md:col-span-2 flex items-start gap-3 mt-2">
+            <input id="f-consent" type="checkbox" class="mt-1 w-4 h-4" />
+            <label for="f-consent" class="text-xs text-[var(--brand-50)]/80">
+              I accept the event rules & liability waiver. (If registering a
+              minor, I confirm I am their parent/guardian.)
+            </label>
+          </div>
+          <div
+            class="md:col-span-2 mt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3"
+          >
+            <button
+              type="submit"
+              class="w-full sm:w-auto px-5 py-3 rounded-2xl bg-[var(--brand-300)] text-neutral-900 font-semibold hover:opacity-90"
+            >
+              Submit Registration
+            </button>
+            <button
+              type="button"
+              onclick="document.getElementById('reg-form').reset()"
+              class="w-full sm:w-auto px-5 py-3 rounded-2xl border border-[var(--brand-300)]/40 text-[var(--brand-300)] hover:border-[var(--brand-300)] hover:text-[var(--brand-300)]/90"
+            >
+              Reset Form
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      id="contact"
+      class="bg-[color:oklch(18%_0.03_350)] border-t border-[var(--brand-400)]/25"
+    >
+      <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
+        <div class="md:col-span-2">
+          <h4 class="text-xl font-semibold flex items-center gap-2">
+            <img
+              src="logo.png"
+              alt="The Great Indian Street Festival logo"
+              class="h-24 w-auto"
+            />
+          </h4>
+          <p class="mt-2 text-[var(--brand-50)]/70">
+            A full-road celebration sports, culture, food & fun for all ages.
+          </p>
+          <div class="mt-4 flex items-center gap-3 text-[var(--brand-50)]/70">
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="hover:text-[var(--brand-50)]"
+              >📷</a
+            >
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="hover:text-[var(--brand-50)]"
+              >👍</a
+            >
+            <a
+              href="#"
+              aria-label="X/Twitter"
+              class="hover:text-[var(--brand-50)]"
+              >🐦</a
+            >
+            <a
+              href="#"
+              aria-label="YouTube"
+              class="hover:text-[var(--brand-50)]"
+              >▶️</a
+            >
+          </div>
+        </div>
+        <div>
+          <h5 class="font-semibold">Event Info</h5>
+          <ul class="mt-3 space-y-2 text-[var(--brand-50)]/80 text-sm">
+            <li class="flex items-center gap-2">
+              📅 Sun, 12 Oct 2025 · 7:00 AM – 9:30 PM
+            </li>
+            <li class="flex items-center gap-2">📍 Ashiana Town, Bhiwadi</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold text-[var(--brand-50)]">Get in touch</h5>
+          <ul class="mt-3 space-y-2 text-[var(--brand-50)]/80 text-sm">
+            <li class="flex items-center gap-2">
+              📞
+              <a
+                href="tel:+919650963406"
+                class="hover:text-[var(--brand-50)] transition"
+              >
+                +91-9650963406
+              </a>
+            </li>
+            <li class="flex items-center gap-2">
+              ✉️
+              <a
+                href="mailto:hello@streetfestival.example"
+                class="hover:text-[var(--brand-50)] transition"
+              >
+                hello@streetfestival.example
+              </a>
+            </li>
+          </ul>
+
+          <a
+            href="#registration"
+            class="mt-4 w-full md:w-auto px-4 py-2 rounded-xl bg-[var(--brand-300)] text-neutral-900 font-semibold hover:opacity-90 inline-block text-center"
+          >
+            Register Now
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Inline JS -->
+    <script>
+      // ===================== DATA =====================
+      const activities = [
+        {
+          key: "stage",
+          title: "Movement Station",
+          color: "from-[var(--brand-700)] to-[var(--brand-500)]",
+          age: "Everyone",
+          blurb:
+            "Energize your morning with power-packed sessions that get you moving!",
+          bullets: ["Zumba", "Yoga", "Dance Fitness"],
+        },
+        {
+          zone: 1,
+          key: "funzone",
+          title: "Obstacle Challenges",
+          color: "from-[var(--brand-300)] to-[var(--brand-500)]",
+          age: "Families",
+          blurb:
+            "Bring out your competitive spirit with fun-filled challenges.",
+          bullets: ["Sack Races", "Relay Runs", "Tug of War"],
+        },
+
+        {
+          zone: 6,
+          key: "trad-games",
+          title: "Traditional Games",
+          color: "from-orange-400 to-amber-500",
+          age: "All Ages",
+          blurb:
+            "Relive childhood memories with games that never go out of style.",
+          bullets: ["Hopscotch", "Chakka Daud", "Balloon Race", "Aim & Throw"],
+        },
+        {
+          zone: 7,
+          key: "cycle-rally",
+          title: "Cycle Rally",
+          color: "from-cyan-500 to-sky-500",
+          age: "Everyone",
+          blurb: "Ride together and celebrate fitness on wheels.",
+          bullets: ["Group Cycling", "Fun Ride Experience"],
+        },
+        {
+          zone: 8,
+          key: "impact-wall",
+          title: "Wall of Impact",
+          color: "from-emerald-600 to-teal-500",
+          age: "Everyone",
+          blurb: "Make your voice heard for a better tomorrow.",
+          bullets: [
+            'Share your pledge: "Bhiwadi ko behtar kaise banayein?"',
+            "Inspire change with your words",
+          ],
+        },
+        {
+          zone: 9,
+          key: "stage-perf",
+          title: "Stage Performances",
+          color: "from-indigo-600 to-purple-600",
+          age: "Everyone",
+          blurb:
+            "Get ready for an evening filled with music, energy, and entertainment!",
+          bullets: ["Live Music Band", "Kids’ Performances", "Flash Mob"],
+        },
+      ];
+
+      const faqs = [
+        {
+          q: "Do I need to pay a registration fee?",
+          a: "No, participation is completely free! Just register to confirm your spot and enjoy all the activities.",
+        },
+        {
+          q: "Can I register on-site at the venue?",
+          a: "Online registration is recommended for a smooth experience. Limited spot registrations may be available, subject to capacity.",
+        },
+        {
+          q: "What time should I arrive at the venue?",
+          a: "Arrive at least 30 minutes before check-in, collect your participation kit, and join the warm-up sessions.",
+        },
+        {
+          q: "Is there parking available?",
+          a: "Yes, designated parking areas will be available near the venue. Volunteers will guide you.",
+        },
+        {
+          q: "Can I bring my kids or family members?",
+          a: "Of course! The festival is designed for all age groups, with special zones and activities for kids and families.",
+        },
+        {
+          q: "Will there be refreshments during the event?",
+          a: "Yes, multiple hydration booths will be available throughout the venue.",
+        },
+        {
+          q: "What should I wear to the event?",
+          a: "Opt for comfortable sportswear or casual outfits with good shoes. A cap or sunscreen is also recommended.",
+        },
+        {
+          q: "Is medical assistance available?",
+          a: "Yes, first-aid stations and medical teams will be present across the venue.",
+        },
+        {
+          q: "What happens if it rains?",
+          a: "The festival will continue as planned, with safety and comfort arrangements in place.",
+        },
+        {
+          q: "Can I transfer my registration to someone else?",
+          a: "Registrations are non-transferable, as each entry is linked to the participant’s details.",
+        },
+      ];
+
+      const EVENT_DATE = "2025-10-12T07:00:00";
+
+      // ===================== HELPERS =====================
+      function pad2(n) {
+        return String(n).padStart(2, "0");
+      }
+      function clockBox(label, value) {
+        return `<div class="w-16 rounded-xl bg-white/10 backdrop-blur border border-[var(--brand-400)]/25 p-2">
+                                      <div class="text-xl font-bold">${value}</div>
+                                      <div class="text-[10px] uppercase tracking-wide text-[var(--brand-50)]/70">${label}</div>
+                                    </div>`;
+      }
+
+      // ===================== RENDERERS =====================
+      function renderCountdown() {
+        const el = document.getElementById("countdown");
+        if (!el) return;
+        function calc() {
+          const now = Date.now();
+          const t = new Date(EVENT_DATE).getTime() - now;
+          const clamp = (v) => (v < 0 ? 0 : v);
+          const days = clamp(Math.floor(t / 86400000));
+          const hours = clamp(Math.floor((t / 3600000) % 24));
+          const minutes = clamp(Math.floor((t / 60000) % 60));
+          const seconds = clamp(Math.floor((t / 1000) % 60));
+          el.innerHTML =
+            clockBox("Days", pad2(days)) +
+            clockBox("Hours", pad2(hours)) +
+            clockBox("Mins", pad2(minutes)) +
+            clockBox("Secs", pad2(seconds));
+        }
+        calc();
+        setInterval(calc, 1000);
+      }
+
+      function handleHeaderScroll() {
+        const header = document.getElementById("header");
+        if (!header) return;
+        const base =
+          "hidden md:block md:fixed md:z-50 md:top-0 md:inset-x-0 md:transition";
+        const apply = () => {
+          if (window.scrollY > 10) {
+            header.className =
+              base +
+              " md:backdrop-blur md:bg-[color:oklch(16%_0.03_350)/0.7] md:border-b md:border-[var(--brand-400)]/20";
+          } else {
+            header.className = base + " md:bg-transparent";
+          }
+        };
+        apply();
+        window.addEventListener("scroll", apply, { passive: true });
+      }
+
+      function renderActivities() {
+        const list = document.getElementById("activity-list");
+        const panel = document.getElementById("activity-panel");
+        if (!list || !panel) return;
+        let active = activities[0].key;
+
+        function renderList() {
+          list.innerHTML = activities
+            .map(
+              (a) => `
+                                        <button data-key="${a.key}"
+                                          class="w-full flex items-center justify-between rounded-2xl border px-4 py-3 transition ${
+                                            active === a.key
+                                              ? "border-[var(--brand-400)]/60 bg-white/10"
+                                              : "border-[var(--brand-400)]/25 hover:border-[var(--brand-400)]/45"
+                                          }">
+                                          <div class="flex items-center gap-3">
+                                            <div class="p-2 rounded-xl bg-gradient-to-br ${
+                                              a.color
+                                            }">🎯</div>
+                                            <div class="text-left">
+                                              <p class="font-semibold flex items-center gap-2">
+                                                ${a.title}
+                                                ${
+                                                  a.zone
+                                                    ? `<span class="text-[10px] px-2 py-0.5 rounded-full bg-[var(--brand-400)]/15 border border-[var(--brand-400)]/40 text-[var(--brand-50)]/80">Zone ${a.zone}</span>`
+                                                    : ""
+                                                }
+                                              </p>
+
+                                            </div>
+                                          </div>
+                                          <span class="w-4 h-4 transition ${
+                                            active === a.key ? "rotate-180" : ""
+                                          }">⌄</span>
+                                        </button>`
+            )
+            .join("");
+
+          list.querySelectorAll("button").forEach((btn) => {
+            btn.addEventListener("click", () => {
+              active = btn.dataset.key;
+              renderList();
+              renderPanel();
+            });
+          });
+        }
+
+        function renderPanel() {
+          const a = activities.find((x) => x.key === active);
+          panel.innerHTML = `
+                                        <div class="rounded-3xl border border-[var(--brand-400)]/25 bg-white/5 backdrop-blur p-6">
+                                          <div class="grid md:grid-cols-2 gap-6">
+                                            <div>
+                                              <h4 class="text-xl font-semibold flex items-center gap-2">
+                                                <span class="inline-block w-2.5 h-2.5 rounded-full bg-gradient-to-br ${
+                                                  a.color
+                                                }"></span>
+                                                ${a.title}
+                                              </h4>
+                                              <p class="mt-2 text-[var(--brand-50)]/80">${
+                                                a.blurb
+                                              }</p>
+                                              <ul class="mt-4 space-y-2 text-sm">
+                                                ${a.bullets
+                                                  .map(
+                                                    (b) =>
+                                                      `<li class="flex gap-2 items-start text-[var(--brand-50)]/85">🏆<span>${b}</span></li>`
+                                                  )
+                                                  .join("")}
+                                              </ul>
+                                              <div class="mt-6 flex flex-wrap gap-3">
+                                                <a href="#registration" class="px-4 py-2 rounded-xl bg-[var(--brand-300)] text-neutral-900 font-semibold hover:opacity-90">Register for ${
+                                                  a.title
+                                                }</a>
+                                                <a href="#route" class="px-4 py-2 rounded-xl border border-[var(--brand-300)]/40 text-[var(--brand-300)] hover:border-[var(--brand-300)] hover:text-[var(--brand-300)]/90">See Route</a>
+                                              </div>
+                                            </div>
+                                            <div>
+                                              <div class="relative h-72 md:h-full rounded-2xl overflow-hidden border border-[var(--brand-400)]/25 bg-gradient-to-br from-white/10 to-white/5">
+                                                <div class="absolute inset-0 bg-gradient-to-br ${
+                                                  a.color
+                                                } opacity-20"></div>
+                                                <div class="absolute inset-0 grid place-items-center">
+                                                  <p class="text-[var(--brand-50)]/80 text-center px-6">Live activity preview (drop a photo/video here in production)</p>
+                                                </div>
+                                                <div class="absolute bottom-0 inset-x-0 p-4 bg-black/30 backdrop-blur">
+                                                  <p class="text-sm text-[var(--brand-50)]/80">Separate lanes + marshals keep it safe and smooth for everyone.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>`;
+        }
+
+        renderList();
+        renderPanel();
+      }
+
+      function renderRoute() {
+        const host = document.getElementById("route-connected");
+        if (!host) return;
+
+        const points = [
+          {
+            label: "Stage",
+            amenity: "Zumba + Yoga + Kids Performance",
+            icon: "🎟️",
+          },
+          {
+            label: "Cycle Station",
+            amenity: "Tune-ups + Helmet fit",
+            icon: "🚴",
+          },
+          {
+            label: "Wall of Change",
+            amenity: "Live pledges showcase",
+            icon: "🧱",
+          },
+          {
+            label: "Zone 1: Fun Games for Kids and Adults",
+            amenity: "Snake & Ladder + Tug of War",
+            icon: "💧",
+          },
+          {
+            label: "Zone 2: Obstacle Course for Adults",
+            amenity: "Hurdles and hoops + Shuttle runs",
+            icon: "⛑️",
+          },
+          {
+            label: "Zone 3: Obstacle Course for Kids",
+            amenity: "Sledge pulls + Sack race",
+            icon: "🍢",
+          },
+          {
+            label: "Zone 4: Creativity Zone",
+            amenity: "Art and craft managed by KCH",
+            icon: "📸",
+          },
+
+          {
+            label: "Zone 5: Free-Play Zone",
+            amenity: "Skipping ropes + Aim and throw game",
+            icon: "🎤",
+          },
+        ];
+
+        host.innerHTML = `
+                                      <div class="relative">
+                                        <div class="grid md:grid-cols-4 gap-4">
+                                          ${points
+                                            .map(
+                                              (p) => `
+                                            <div class="relative">
+                                              <div class="rounded-2xl border border-[var(--brand-400)]/25 bg-white/5 p-4 h-full">
+                                                <div class="flex items-center gap-3">
+                                                  <div class="w-10 h-10 grid place-items-center rounded-xl bg-[var(--brand-300)]/15 border border-[var(--brand-300)]/30 text-[var(--brand-300)]">${p.icon}</div>
+                                                  <div>
+                                                    <h4 class="font-semibold text-sm md:text-base">${p.label}</h4>
+                                                    <p class="text-xs text-[var(--brand-50)]/70 md:hidden">${p.amenity}</p>
+                                                  </div>
+                                                </div>
+                                                <p class="hidden md:block text-sm text-[var(--brand-50)]/80 mt-3">${p.amenity}</p>
+                                              </div>
+                                            </div>`
+                                            )
+                                            .join("")}
+                                        </div>
+                                      </div>`;
+      }
+
+      function renderTimeline() {
+        const items = [
+          {
+            time: "06:30",
+            title: "Gates Open & Bib Pickup",
+            details: "Warm-up music, gear fit, marshals briefing.",
+          },
+          {
+            time: "07:00",
+            title: "Skating Heats",
+            details: "Beginner then Intermediate slalom runs.",
+          },
+          {
+            time: "08:00",
+            title: "Sprint Racing",
+            details: "50m heats followed by 100m finals.",
+          },
+          {
+            time: "09:00",
+            title: "Cycling Loop",
+            details: "Staggered starts; slow-cycling challenge midway.",
+          },
+          {
+            time: "11:30",
+            title: "Kids Medals & Photo",
+            details: "Winners, certificates, and group photo.",
+          },
+          {
+            time: "16:00",
+            title: "Yoga & Zumba Jam",
+            details: "Community fitness hour on the main floor.",
+          },
+          {
+            time: "18:00",
+            title: "Street Cricket Finals",
+            details: "Soft-ball knock-out finale with crowd stands.",
+          },
+          {
+            time: "19:30",
+            title: "Cultural Performances",
+            details: "Live bands, dance troupes, community showcases.",
+          },
+          {
+            time: "21:00",
+            title: "Closing Ceremony",
+            details: "Awards, thank-yous & fireworks.",
+          },
+        ];
+        const wrap = document.getElementById("timeline");
+        if (!wrap) return;
+        wrap.innerHTML = `
+                                      <div class="relative">
+                                        <div class="absolute left-5 top-0 bottom-0 w-0.5 bg-[var(--brand-400)]/25"></div>
+                                        <div class="space-y-4">
+                                          ${items
+                                            .map(
+                                              (it) => `
+                                            <div class="relative pl-14">
+                                              <span class="absolute left-0 top-2 grid place-items-center w-10 h-10 rounded-full bg-[var(--brand-400)]/15 border border-[var(--brand-400)]/25 text-xs font-semibold">${it.time}</span>
+                                              <div class="rounded-2xl border border-[var(--brand-400)]/25 bg-white/5 p-4">
+                                                <div class="font-semibold">${it.title}</div>
+                                                <p class="mt-1 text-sm text-[var(--brand-50)]/80">${it.details}</p>
+                                              </div>
+                                            </div>`
+                                            )
+                                            .join("")}
+                                        </div>
+                                      </div>`;
+      }
+
+      function renderSponsors() {
+        const strip = document.getElementById("sponsor-strip");
+        if (!strip) return;
+        const sponsorLogos = [
+          "slider/2.png",
+          "slider/3.png",
+          "slider/4.png",
+          "slider/5.png",
+          "slider/6.png",
+          "slider/7.png",
+          "slider/8.png",
+          "slider/9.png",
+          "slider/10.png",
+        ];
+        strip.innerHTML = sponsorLogos
+          .map(
+            (src, idx) =>
+              `<div class="inline-flex items-center justify-center mx-2">
+                                            <img src="${src}" alt="Sponsor logo ${
+                idx + 1
+              }"
+                                                 class="h-60 w-auto opacity-90 rounded-2xl"
+                                                 onerror="if(!this.dataset.fallback){this.dataset.fallback='done';this.src=this.src.replace('.png','.svg');}else{this.parentElement.style.display='none';}" />
+                                          </div>`
+          )
+          .join("");
+        let raf;
+        const step = () => {
+          strip.scrollLeft += 1;
+          if (strip.scrollLeft >= strip.scrollWidth - strip.clientWidth)
+            strip.scrollLeft = 0;
+          raf = requestAnimationFrame(step);
+        };
+        raf = requestAnimationFrame(step);
+        window.addEventListener("beforeunload", () =>
+          cancelAnimationFrame(raf)
+        );
+      }
+
+      function renderSafety() {
+        const cards = document.getElementById("safety-cards");
+        if (!cards) return;
+        const data = [
+          {
+            icon: "🛡️",
+            title: "On-Ground Volunteers",
+            text: "Friendly support teams to guide and assist participants.",
+          },
+          {
+            icon: "🧭",
+            title: "First-Aid Station",
+            text: "Immediate medical help available for any emergencies.",
+          },
+          {
+            icon: "💧",
+            title: "Hydration Points",
+            text: "Water and refreshments to keep everyone energized.",
+          },
+          {
+            icon: "⛑️",
+            title: "Security Arrangements",
+            text: "Well-coordinated staff ensuring a safe environment.",
+          },
+          {
+            icon: "👪",
+            title: "Kids’ Assistance Zone",
+            text: "Dedicated help desk for children and parents.",
+          },
+          {
+            icon: "♻️",
+            title: "Lost & Found Desk",
+            text: "Easy support for misplaced belongings.",
+          },
+        ];
+        cards.innerHTML = data
+          .map(
+            (d) => `
+                                      <div class="rounded-2xl border border-[var(--brand-400)]/25 bg-white/5 p-5">
+                                        <div class="flex items-center gap-3">
+                                          <div class="p-2 rounded-xl bg-[var(--brand-300)]/15 text-[var(--brand-300)] border border-[var(--brand-300)]/30">${d.icon}</div>
+                                          <h4 class="font-semibold">${d.title}</h4>
+                                        </div>
+                                        <p class="text-sm text-[var(--brand-50)]/80 mt-2">${d.text}</p>
+                                      </div>`
+          )
+          .join("");
+      }
+
+      function renderFAQ() {
+        const list = document.getElementById("faq-list");
+        if (!list) return;
+        list.innerHTML = "";
+        faqs.forEach((f) => {
+          const item = document.createElement("div");
+          item.innerHTML = `
+                                        <button class="w-full flex items-center justify-between px-4 py-4 text-left">
+                                          <span class="font-medium">${f.q}</span><span class="w-4 h-4">⌄</span>
+                                        </button>
+                                        <div class="px-4 pb-4 text-[var(--brand-50)]/80 hidden">${f.a}</div>`;
+          const btn = item.querySelector("button");
+          const body = item.querySelector("div");
+          btn.addEventListener("click", () => {
+            body.classList.toggle("hidden");
+            btn.querySelector("span:last-child").classList.toggle("rotate-180");
+          });
+          list.appendChild(item);
+        });
+      }
+
+      // ========== Wall of Change ==========
+      function initWall() {
+        const board = document.getElementById("pledgeBoard");
+        const addBtn = document.getElementById("addPledge");
+        const nameEl = document.getElementById("pledgeName");
+        const textEl = document.getElementById("pledgeText");
+        if (!board || !addBtn) return;
+        const addCard = (n, t) => {
+          const card = document.createElement("div");
+          card.className =
+            "rounded-xl border border-[var(--brand-400)]/25 bg-white/5 p-4 text-left";
+          card.innerHTML = `<div class="text-sm text-[var(--brand-50)]/60">${
+            n || "Guest"
+          }</div><div class="mt-1 font-medium">${t}</div>`;
+          board.prepend(card);
+        };
+        addBtn.addEventListener("click", () => {
+          const n = nameEl.value.trim();
+          const t = textEl.value.trim();
+          if (!t) {
+            textEl.focus();
+            return;
+          }
+          addCard(n, t);
+          nameEl.value = "";
+          textEl.value = "";
+        });
+      }
+
+      // ========== Form ==========
+
+      // == GOOGLE APPS SCRIPT WEB APP ==
+      const SCRIPT_URL =
+        "https://script.google.com/macros/s/AKfycbwSEu7ttBrwFbxho3R0X5-eBuygBv5RmguK2yPlminWBscQxSKLEPvJRtmW7XBIO9mdOQ/exec";
+
+      function formValidation() {
+        const f = document.getElementById("reg-form");
+        if (!f) return;
+
+        const get = (id) => document.getElementById(id);
+        const showErr = (id, msg) => {
+          const p = get("e-" + id);
+          if (!p) return;
+          p.textContent = msg || "";
+          p.classList.toggle("hidden", !msg);
+          const input = get("f-" + id);
+          if (input) input.classList.toggle("border-rose-400", !!msg);
+        };
+
+        f.addEventListener("submit", async (ev) => {
+          ev.preventDefault();
+
+          // read values
+          const name = get("f-name").value.trim();
+          const phone = get("f-phone").value.trim();
+          const email = get("f-email").value.trim();
+          const resident = (get("f-resident")?.value || "").trim(); // "yes" | "no"
+          const ashiana = (get("f-ashiana")?.value || "").trim();
+          const address = (get("f-address")?.value || "").trim();
+          const query = (get("f-query")?.value || "").trim();
+
+          // validate
+          let errors = 0;
+          if (!name) {
+            showErr("name", "Full name is required");
+            errors++;
+          } else showErr("name", "");
+          if (!/^[0-9]{7,15}$/.test(phone)) {
+            showErr("phone", "Valid phone is required");
+            errors++;
+          } else showErr("phone", "");
+          if (!/^([^\s@]+)@([^\s@]+\.)+[^\s@]+$/.test(email)) {
+            showErr("email", "Valid email is required");
+            errors++;
+          } else showErr("email", "");
+          if (!resident) {
+            showErr("resident", "Please select YES or NO");
+            errors++;
+          } else {
+            showErr("resident", "");
+            if (resident === "yes" && !ashiana) {
+              showErr("ashiana", "Please select your project");
+              errors++;
+            } else showErr("ashiana", "");
+            if (resident === "no" && !address) {
+              showErr("address", "Please enter your address");
+              errors++;
+            } else showErr("address", "");
+          }
+          showErr("query", ""); // optional
+
+          if (errors > 0) return;
+
+          // Build payload (must match sheet headers exactly)
+          // Date | Full Name | Phone No | Email Address | Ashiana Resident | Select the Project | Address | Any Query (Optional)
+          const fd = new FormData();
+          fd.append("Full Name", name);
+          fd.append("Phone No", phone);
+          fd.append("Email Address", email);
+          fd.append("Ashiana Resident", resident === "yes" ? "Yes" : "No");
+          fd.append("Select the Project", resident === "yes" ? ashiana : "");
+          fd.append("Address", resident === "no" ? address : "");
+          fd.append("Any Query (Optional)", query);
+
+          // UI: disable while sending
+          const submitBtn = f.querySelector('button[type="submit"]');
+          const resetBtn = f.querySelector('button[type="button"]');
+          const prevLabel = submitBtn?.textContent;
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Submitting...";
+          }
+          if (resetBtn) {
+            resetBtn.disabled = true;
+          }
+
+          try {
+            // no-cors avoids preflight/strict CORS. Response is opaque, so don't check res.ok/status.
+            await fetch(SCRIPT_URL, {
+              method: "POST",
+              mode: "no-cors",
+              body: fd,
+            });
+
+            // Optimistic success UX
+            alert(`Thanks! ${name}, your registration has been received.`);
+            f.reset();
+            const sel = get("f-resident");
+            if (sel) sel.dispatchEvent(new Event("change"));
+          } catch (err) {
+            console.error(err);
+            alert("Submission failed. Please try again in a moment.");
+          } finally {
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.textContent = prevLabel || "Submit Registration";
+            }
+            if (resetBtn) {
+              resetBtn.disabled = false;
+            }
+          }
+        });
+      }
+
+      function bindResidentFields() {
+        const sel = document.getElementById("f-resident");
+        if (!sel) return;
+        const yesBox = document.getElementById("resident-yes");
+        const noBox = document.getElementById("resident-no");
+        const update = () => {
+          const v = sel.value;
+          yesBox.classList.toggle("hidden", v !== "yes");
+          noBox.classList.toggle("hidden", v !== "no");
+        };
+        sel.addEventListener("change", update);
+        update();
+      }
+
+      // (theme toggle removed)
+
+      function bindGlobal() {
+        const yearEl = document.getElementById("year");
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+      }
+
+      // ===================== INIT =====================
+      document.addEventListener("DOMContentLoaded", () => {
+        renderCountdown();
+        handleHeaderScroll();
+        renderActivities();
+        renderRoute();
+        renderTimeline();
+        renderSponsors();
+        renderSafety();
+        renderFAQ();
+        initWall();
+        bindGlobal();
+        formValidation();
+        bindResidentFields();
+      });
+    </script>
+  </body>
+</html>
